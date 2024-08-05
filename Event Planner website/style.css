@@ -1,0 +1,334 @@
+/* General Styling */
+* Google Font CDN Link */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation */
+header {
+    background: #41cbcf;
+    color: rgb(76, 59, 137);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background: rgb(223, 142, 176);
+    margin: 4px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(28, 167, 70);
+    text-decoration: none;
+    font-size: 1.1em;
+    
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+search-container button {
+    padding: 5px;
+    background: rgb(161, 43, 43);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('floral-ornaments.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(103, 152, 184);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background: #ff6347;
+    border: none;
+    color: rgb(54, 103, 98);
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* About Section */
+.about {
+    background: url('about\ us.jpg') no-repeat center center/cover;
+    height: 400px;
+    width: auto;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+.about h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin: 10px 0;
+}
+
+/* Services Section */
+.services {
+    background: url('service.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services .service {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+.services .service img {
+    width: 100%;
+    height: auto;
+}
+
+.services .service p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Gallery Section */
+.gallery {
+    background: url('gallery.jpg') no-repeat center center/cover;
+    height: 300px;
+    width:auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery .gallery-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+.gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Login Section */
+.login {
+    background: url('login.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    text-align: center;
+    color: #080808;
+
+}
+
+.login h2 {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+
+.login .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.login-container form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #86219a;
+    border-radius: 5px;
+}
+
+.login-container form button {
+    padding: 10px;
+    background: url('floral-ornaments.jpg') no-repeat center center/cover;
+    color: rgb(21, 30, 148);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    background: url('floral-ornaments.jpg') no-repeat center center/cover;
+    color: rgb(92, 31, 83);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-content form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-content form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+footer .footer-content form input, footer .footer-content form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer .footer-content form button {
+    padding: 10px;
+    background: #ff6347;
+    color: rgb(39, 154, 158);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .company-info {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    color: Burgundyred;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .services .service, .gallery .gallery-item {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+}
